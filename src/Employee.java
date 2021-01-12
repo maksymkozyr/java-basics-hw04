@@ -14,28 +14,23 @@ public class Employee implements Payable {
   }
 
   public String getEmployeeId() {
-
     return employeeId;
   }
 
   public void setEmployeeId(String employeeId) {
-
     this.employeeId = employeeId ;
 
   }
 
   public String getName() {
-
     return name;
   }
 
   public void setName(String name) {
-
     this.name = name;
   }
 
   public double getAverageMonthlySalary() {
-
     return averageMonthlySalary;
   }
 
@@ -45,8 +40,6 @@ public class Employee implements Payable {
 
   @Override
   public String toString() {
-
-//    return name + " " + employeeId + " " + Math.round(averageMonthlySalary);
     return String.format(new Locale("en","US"), "name: %s id: %s salary %.2f", name, employeeId, averageMonthlySalary);
   }
 
